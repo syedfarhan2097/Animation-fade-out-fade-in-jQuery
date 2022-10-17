@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p{
+            position: relative;
+            /* animation: myMYdiv 5s infinite; */
+        /* -webkit-animation: myMYdiv 5s 1; */
+        }
+        @keyframes myMYdiv {
+    0%   {bottom: -50px;
+            opacity: 0;
+    }
+    100% {bottom: 0px;
+            opacity: 1;
+    }
+  }
+  @-webkit-keyframes myMYdiv {
+    0%   {bottom: -50px;}
+    100% {bottom: 0px;}
+  }
+    </style>
+</head>
+<body>
+    
+    <p>Click me too!</p>
+    <button>Click me</button>
+    
+    
+    
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        function task() {
+            $("p").css({
+                'animation' : 'unset',
+                'animation' : 'unset',
+                
+            });
+}
+        $("button").click(function(){
+            
+            $('p').css({
+                'animation' : 'myMYdiv 2s 1',
+                '-webkit-animation' : 'myMYdiv 2s 1'
+            });
+            setTimeout(task, 2200);
+        });
+
+
+
+    });
+    </script>
+
+</body>
+</html>
